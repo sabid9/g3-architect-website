@@ -86,30 +86,10 @@ nav li a{
     margin-top: 20px;
 }
 
-/* for mobile devices */
-@media screen and (max-width: 576px) {
-   header{
-    padding: 10px;
-   }
-  
-  nav{
-    flex-direction: column;
-  } 
-}
-
-/* for tablet */
-
-@media screen and (min-width: 576px) and (max-width: 992px){
-   header{
-    padding: 50px;
-   }
-   nav{
-    flex-direction: column;
-   }
-}
-
 
 /* Body section */
+/* ------------------- */
+/* -------------------- */
 
 main{
     max-width: 1440px;
@@ -140,10 +120,38 @@ main{
 .quick-list{
    
     font-weight: 500px;
-    color: #474747;;
+    color: #727272;
 
 }
 
 .team-features{
     color: #fd9218;
 }
+
+
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+    header, .team-content{
+     padding: 10px;
+    }
+   
+   nav, .team-container{
+     flex-direction: column;
+   } 
+   .team-image{
+    grid-template-columns: 1fr;
+   }
+ }
+ 
+ /* for tablet */
+ 
+ @media screen and (min-width: 576px) and (max-width: 992px){
+    header{
+     padding: 50px;
+    }
+    nav, .team-container{
+     flex-direction: column;
+    }
+ }
+ 
+ 

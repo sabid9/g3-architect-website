@@ -102,9 +102,48 @@ nav li a{
 @media screen and (min-width: 576px) and (max-width: 992px){
    header{
     padding: 50px;
-    
    }
    nav{
     flex-direction: column;
    }
+}
+
+
+/* Body section */
+
+main{
+    max-width: 1440px;
+    margin: 50px auto 0;
+
+}
+
+.team-container{
+    display: flex;
+    align-items: center;
+
+}
+
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.team-content{
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.team-content .team-title{
+    font-size: 2.8rem;
+}
+.quick-list{
+   
+    font-weight: 500px;
+    color: #474747;;
+
+}
+
+.team-features{
+    color: #fd9218;
 }

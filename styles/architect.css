@@ -130,7 +130,39 @@ main{
 
 /* Design for features section */
 /* ------------------------------ */
+ .feature{
+    margin-top: 150px;
+    display: flex;
+    gap: 150px;
+ }
 
+ .feature-head>.feature-title{
+    font-size: 2.8rem;
+    border-left: 5px solid #fd9218;
+    padding-left: 20px;
+ }
+ .feature-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+ }
+
+ .experience, .tajurba{
+    width: 340px;
+    height: 130px;
+    background-color: #fd9218;
+    color: #fff;
+    border: #fd9218;
+    border-radius: 8px;
+    text-align: center;
+ }
+ .experience>h2{
+    font-size: 65px;
+    margin-bottom: 20px;
+ }
 
 
 /* Design for Facts section */
@@ -143,6 +175,11 @@ main{
 .icon-container{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+}
+
+.icon-container > .card  > h2, .card-description{
+    margin-top: 10px;
 }
 
 .icon-container >.card{
@@ -150,7 +187,9 @@ main{
     border: 2px solid #fd9218;
     border-radius: 8px;
     padding: 40px 30px;
+
 }
+
 
 .card-description{
     font-weight: 600;
@@ -158,9 +197,19 @@ main{
 
 }
 
-.card>h2,.card-description{
-    margin-top: 10px;
+/* Sponsor section */
+/* ----------------- */
+.sponsor{
+    text-align: center;
 }
+
+.sponsor-img-container{
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
 
@@ -171,12 +220,19 @@ main{
      padding: 10px;
     }
    
-   nav, .team-container{
+   nav, .team-container, .icon-container, .sponsor-img-container{
      flex-direction: column;
    } 
    .team-image{
     grid-template-columns: 1fr;
    }
+
+   .sponsor-img-container>img{
+        width: 200px;
+        gap: 20px;
+        margin: 0 auto;
+   }
+
  }
  
  /* for tablet */
@@ -185,9 +241,14 @@ main{
     header{
      padding: 50px;
     }
-    nav, .team-container{
+    nav, .team-container, .sponsor-img-container{
      flex-direction: column;
     }
+    .sponsor-img-container>img{
+        width: 150px;
+        gap: 20px;
+        margin: 0 auto;
+   }
  }
  
  

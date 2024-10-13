@@ -150,19 +150,33 @@ main{
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
  }
 
- .experience, .tajurba{
+ .experience{
     width: 340px;
-    height: 130px;
+    height: 150px;
     background-color: #fd9218;
-    color: #fff;
     border: #fd9218;
+    padding: 0 20px;
     border-radius: 8px;
     text-align: center;
+    position: relative;
+    bottom: 100px;
+
  }
  .experience>h2{
-    font-size: 65px;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    color: #fff;
+    margin: 0px;
  }
+ .tajurba{
+    color: #fff;
+    margin: 0;
+    
+ }
+ .feature-img img{
+    height: 90%;
+    margin-left: 90px;
+ }
+
 
 
 /* Design for Facts section */
@@ -220,9 +234,19 @@ main{
      padding: 10px;
     }
    
-   nav, .team-container, .icon-container, .sponsor-img-container{
+   nav, .team-container, .icon-container, .sponsor-img-container, .feature{
      flex-direction: column;
    } 
+
+   .feature-img img{
+     max-width: 90%;
+     margin-left: 0;
+   }
+   .experience{
+    position: static;
+    padding: 0 5px;
+   }
+
    .team-image{
     grid-template-columns: 1fr;
    }
@@ -233,6 +257,7 @@ main{
         margin: 0 auto;
    }
 
+
  }
  
  /* for tablet */
@@ -241,7 +266,7 @@ main{
     header{
      padding: 50px;
     }
-    nav, .team-container, .sponsor-img-container{
+    nav, .team-container, .sponsor-img-container, .feature{
      flex-direction: column;
     }
     .sponsor-img-container>img{

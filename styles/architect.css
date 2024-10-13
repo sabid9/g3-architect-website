@@ -140,6 +140,28 @@ main{
    font-weight: 700px;
 }
 
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-container >.card{
+    text-align: center;
+    border: 2px solid #fd9218;
+    border-radius: 8px;
+    padding: 40px 30px;
+}
+
+.card-description{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.card>h2,.card-description{
+    margin-top: 10px;
+}
+
 
 
 
